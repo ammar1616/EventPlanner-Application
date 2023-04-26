@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Final_Project</string>
+    <string name="open"> Open Navigation Drawer</string>
+    <string name="close"> Close Navigation Drawer</string>
+    <string name="home">home</string>
+    <string name="add_event">Add Event</string>
+    <string name="delete_event"> Delete Event</string>
+    <string name="show_events"> how Events</string>
+</resources>
