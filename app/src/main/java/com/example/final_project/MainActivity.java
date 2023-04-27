@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     case R.id.nav_deleteevent: {
-                        Toast.makeText(MainActivity.this, "Your Event Deleted", Toast.LENGTH_SHORT).show();
                         break;
                     }
 
@@ -77,8 +76,11 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
 
-                    case R.id.nav_logout: {
+                    case R.id.nav_signup: {
+
                         Toast.makeText(MainActivity.this, "Stay With Us", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(MainActivity.this, signup.class);
+                        startActivity(i);
                         break;
                     }
 

@@ -33,9 +33,9 @@
                 android:title="Login" />
 
             <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/logout"
-                android:title="Log Out" />
+                android:id="@+id/nav_signup"
+                android:icon="@drawable/sign_up"
+                android:title="Sign Up" />
 
         </menu>
 

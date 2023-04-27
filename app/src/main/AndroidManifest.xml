@@ -35,6 +35,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.final_project.MainActivity" />
         </activity>
+
+        <activity
+            android:name=".signup"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.final_project.MainActivity" />
+        </activity>
+
+
         <activity
             android:name=".login"
             android:exported="true"
