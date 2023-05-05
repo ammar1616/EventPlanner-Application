@@ -1,8 +1,5 @@
 package com.example.final_project;
 
-import static java.lang.Integer.parseInt;
-
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +29,13 @@ public class login extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences.Editor ed_login = sharedlogin.edit();
                 if (sharedlogin.contains(user.getText().toString())) {
-                    Toast.makeText(login.this, "Welcome", Toast.LENGTH_SHORT).show();
+                    String pass_tmp = sharedlogin.getString(user.getText().toString(), "");
+                    if (pass_tmp.equals(pass.getText().toString())) {
+                        Toast.makeText(login.this, "Welcome", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(login.this, "Wrong Password", Toast.LENGTH_SHORT).show();
+
+                    }
                 } else {
                     ed_login.putString(user.getText().toString(), pass.getText().toString());
                     Toast.makeText(login.this, "Sorry Not Found", Toast.LENGTH_SHORT).show();

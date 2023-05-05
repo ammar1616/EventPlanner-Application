@@ -1,6 +1,6 @@
-Application Name: "TravelPlanner"
+Application Name: "EventPlanner"
 
-Description: "TravelPlanner" is a mobile application that helps users plan their travel itinerary, create a packing checklist, set reminders for important activities, and receive notifications for upcoming events during their trip. The app supports multiple languages for international travelers, has a splash screen with a logo, and uses different layouts for a visually appealing user interface.
+Description: "EventPlanner" is a mobile application that helps users plan their events itinerary, create a packing checklist, set reminders for important activities, and receive notifications for upcoming events. The app supports multiple languages for international travelers, has a splash screen with a logo, and uses different layouts for a visually appealing user interface.
 
 Features:
 
@@ -8,11 +8,11 @@ Features:
 
 2. Explicit intents: The app uses explicit intents to navigate between activities, allowing users to switch between different sections of the app seamlessly.
 
-3. Implicit intents: The app uses implicit intents to allow users to share their travel plans or packing checklist with others through social media or messaging apps.
+3. Implicit intents: The app uses implicit intents to allow users to share their events plans or packing checklist with others through social media or messaging apps.
 
-4. Notifications using job scheduler: The app uses the job scheduler to send notifications to users for important activities, such as flight reminders, hotel check-ins, or sightseeing tours, at specified times or intervals during their trip.
+4. Notifications using job scheduler: The app uses the job scheduler to send notifications to users for important activities, such as event reminders, doctors' check-ins, or travel tours, at specified times.
 
-5. RecyclerView: The app uses a RecyclerView to display the packing checklist items and reminders in a list format, allowing users to easily add, edit, and delete items.
+5. RecyclerView: The app uses a RecyclerView to display the packing eventlist items and reminders in a list format, allowing users to easily add, edit, and delete items.
 
 6. SharedPreferences: The app uses SharedPreferences to store user preferences, such as language settings, notification preferences, and packing checklist items, so that the data is persistent across app sessions.
 
@@ -22,4 +22,4 @@ Features:
 
 9. Splash screen: The app displays a splash screen with a logo or branding when the app is launched, providing a professional and polished look to the overall user experience.
 
-Overall, "TravelPlanner" is a user-friendly mobile application that helps travelers plan their trips, stay organized with packing checklists and reminders, and provides a seamless and visually appealing user interface with support for multiple languages.
+Overall, "EventPlanner" is a user-friendly mobile application that helps users plan their events, stay organized with packing checklists and reminders, and provides a seamless and visually appealing user interface with support for multiple languages.

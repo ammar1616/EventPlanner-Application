@@ -32,7 +32,7 @@ public class signup extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (shared_signup.contains(ed1.getText().toString())) {
-                    Toast.makeText(signup.this, "sorry", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup.this, "Username was Used Before", Toast.LENGTH_SHORT).show();
                 } else {
                     edit1.putString(ed1.getText().toString(), ed2.getText().toString());
                     edit1.commit();
