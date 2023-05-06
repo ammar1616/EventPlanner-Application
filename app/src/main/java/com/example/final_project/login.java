@@ -34,18 +34,14 @@ public class login extends AppCompatActivity {
                         Toast.makeText(login.this, "Welcome", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(login.this, "Wrong Password", Toast.LENGTH_SHORT).show();
-
                     }
                 } else {
                     ed_login.putString(user.getText().toString(), pass.getText().toString());
                     Toast.makeText(login.this, "Sorry Not Found", Toast.LENGTH_SHORT).show();
-
                 }
-
 
             }
         });
-
 
     }
 }
