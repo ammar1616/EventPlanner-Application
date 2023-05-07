@@ -15,9 +15,9 @@
             android:title="@string/add_event" />
 
         <item
-            android:id="@+id/nav_deleteevent"
-            android:icon="@drawable/deleteevent"
-            android:title="@string/delete_event" />
+            android:id="@+id/nav_setalarm"
+            android:icon="@drawable/setalarm"
+            android:title="@string/setalarm" />
 
         <item
             android:id="@+id/nav_showevents"
@@ -30,12 +30,12 @@
             <item
                 android:id="@+id/nav_login"
                 android:icon="@drawable/login"
-                android:title="Login" />
+                android:title="@string/Login" />
 
             <item
                 android:id="@+id/nav_signup"
                 android:icon="@drawable/sign_up"
-                android:title="Sign Up" />
+                android:title="@string/sign_up" />
 
         </menu>
 
@@ -47,12 +47,12 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/share"
-                android:title="Share" />
+                android:title="@string/share" />
 
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/send"
-                android:title="Send" />
+                android:title="@string/send" />
 
         </menu>
 

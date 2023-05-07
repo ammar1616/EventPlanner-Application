@@ -3,10 +3,12 @@ package com.example.final_project;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 public class DataAccessObject_Events {
 
     private DatabaseReference databaseReference;
+
 
     public DataAccessObject_Events() {
         FirebaseDatabase db = FirebaseDatabase.getInstance();
@@ -19,5 +21,9 @@ public class DataAccessObject_Events {
 
     public Task<Void> delete(String key) {
         return databaseReference.child(key).removeValue();
+    }
+
+    public Query get() {
+        return databaseReference.orderByKey();
     }
 }

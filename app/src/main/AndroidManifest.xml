@@ -2,8 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
 
 
     <application
@@ -16,23 +25,33 @@
         android:theme="@style/Theme.Final_Project"
         tools:targetApi="31">
 
+        <receiver
+            android:name=".OnReciever"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <receiver
+            android:name=".BootCompleted"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name=".addevent"
             android:exported="true"
@@ -42,7 +61,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.final_project.MainActivity" />
         </activity>
-
         <activity
             android:name=".signup"
             android:exported="true"
@@ -52,8 +70,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.final_project.MainActivity" />
         </activity>
-
-
         <activity
             android:name=".login"
             android:exported="true"
@@ -70,6 +86,20 @@
                 android:value="com.example.final_project.addevent" />
         </activity>
 
+        <activity
+            android:name=".set_alarm"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.final_project.MainActivity" />
+        </activity>
+        <activity
+            android:name=".after_alarm"
+            android:exported="true">
+        </activity>
+
+        <receiver android:name=".AlarmReciever" />
     </application>
+
 
 </manifest>

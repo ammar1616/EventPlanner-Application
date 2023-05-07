@@ -57,7 +57,7 @@ public class Events {
     }
 
     public String fulldate() {
-        String dt = Integer.toString(day) + Integer.toString(month) + Integer.toString(year);
+        String dt = Integer.toString(day) + "/" + Integer.toString(month) + "/" + Integer.toString(year);
         return dt;
     }
 }

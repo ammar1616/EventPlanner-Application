@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Final_Project</string>
+    <string name="open">فتح</string>
+    <string name="close">اغلاق</string>
+    <string name="home">الرئيسية</string>
+    <string name="add_event">اضافة حدث</string>
+    <string name="show_events">اظهار الاحداث</string>
+    <string name="setalarm"> ضبط المنبه</string>
+    <string name="Login">تسجيل الدخول</string>
+    <string name="sign_up">اشتراك الدخول</string>
+    <string name="share">المشاركة</string>
+    <string name="send">ارسال</string>
+</resources>
