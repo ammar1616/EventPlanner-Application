@@ -1,3 +1,7 @@
+# EventPlanner-Application
+Event Planner Application which you can (add upcoming event and describe some info about it and the application will notify you then ,delete the event ,with splash screen,shared preference,....)
+
+
 Application Name: "EventPlanner"
 
 Description: "EventPlanner" is a mobile application that helps users plan their events itinerary, create a packing checklist, set reminders for important activities, and receive notifications for upcoming events. The app supports multiple languages for international travelers, has a splash screen with a logo, and uses different layouts for a visually appealing user interface.
