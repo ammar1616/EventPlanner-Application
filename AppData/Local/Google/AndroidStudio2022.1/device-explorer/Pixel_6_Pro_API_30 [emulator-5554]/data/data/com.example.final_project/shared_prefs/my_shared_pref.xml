@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="Month" value="4" />
+    <string name="Description">Wedding plan</string>
+    <int name="Year" value="2023" />
+    <int name="Day" value="26" />
+    <string name="Name">Ammar</string>
+</map>
